@@ -1,0 +1,18 @@
+
+<resources>
+    <string name="app_name">Calcul IMC</string>
+    <string name="title">Calcul de l IMC</string>
+    <string name="weight_hint">Poids en kg</string>
+    <string name="height_hint">Taille en cm</string>
+    <string name="calculate">Calculer</string>
+    <string name="clear">Effacer</string>
+    <string name="share">Partager le resultat</string>
+    <string name="result_label">Votre IMC :</string>
+    <string name="category_label">Categorie :</string>
+    <string name="gauge_label">Indicateur IMC</string>
+    <string name="history_title">Historique des calculs</string>
+    <string name="error_empty">Veuillez remplir tous les champs.</string>
+    <string name="error_invalid">Le poids et la taille doivent etre positifs.</string>
+    <string name="error_number">Veuillez saisir des nombres valides.</string>
+    <string name="share_title">Partager mon resultat IMC</string>
+</resources>

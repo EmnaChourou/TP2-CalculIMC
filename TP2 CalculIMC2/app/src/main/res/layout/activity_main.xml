@@ -1,0 +1,114 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#174A7E"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/editTextPoids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editTextTaille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/height_hint"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/buttonCalculer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate" />
+
+        <Button
+            android:id="@+id/buttonEffacer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear" />
+
+        <TextView
+            android:id="@+id/textViewImc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result_label"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textViewCategorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gauge_label"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarIMC"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:max="40"
+            android:progress="0"
+            android:progressTint="#27AE60"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonPartager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewHistorique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/history_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#174A7E"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>
